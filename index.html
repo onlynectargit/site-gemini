@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nectar | Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="container nav">
+            <a href="#" class="logo">n<span>ectar</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i data-lucide="menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1 class="reveal">Hi, I'm <span class="accent-text">nectar</span></h1>
+                <p class="reveal">I'm a <span id="typing-text" class="accent-text"></span><span class="cursor">|</span></p>
+                <div class="hero-btns reveal">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title reveal">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>I am a passionate student explorer, constantly learning and building new things. My journey in technology is driven by curiosity and a desire to create impactful digital experiences.</p>
+                        <p>Currently focusing on mastering web technologies and design principles to build modern, responsive applications that stand out.</p>
+                    </div>
+                    <div class="about-visual reveal">
+                        <div class="visual-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title reveal">Skills</h2>
+                <div class="skills-grid reveal">
+                    <div class="skill-card">
+                        <i data-lucide="code"></i>
+                        <h3>Frontend</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="layout"></i>
+                        <h3>Design</h3>
+                        <p>UI/UX, Responsive Layouts</p>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="database"></i>
+                        <h3>Backend</h3>
+                        <p>Basic Node.js, Python</p>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="terminal"></i>
+                        <h3>Tools</h3>
+                        <p>Git, VS Code, CLI</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title reveal">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <div class="img-placeholder">Project Alpha</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Alpha</h3>
+                            <p>A modern web application built with a focus on user experience and performance.</p>
+                            <div class="project-links">
+                                <a href="#"><i data-lucide="external-link"></i></a>
+                                <a href="#"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <div class="img-placeholder">Project Beta</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Beta</h3>
+                            <p>A responsive landing page designed for a tech startup, featuring sleek animations.</p>
+                            <div class="project-links">
+                                <a href="#"><i data-lucide="external-link"></i></a>
+                                <a href="#"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title reveal">Get In Touch</h2>
+                <div class="contact-container reveal">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="github"></i></a>
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 nectar. Built with ❤️ and Code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
